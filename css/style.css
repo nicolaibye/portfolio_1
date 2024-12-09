@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Colour */
+
+:root {
+  --hard-pink: #ee2f58;
+  --ligh-color: #e3e3d5;
+  --light-bg-color: #fffffa;
+  --night-blue: #0c152a;
+  --royal-blue: #23364e;
+  --sea-weed: #2c5f63;
+}
+
+/* Global */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+  background: var(--light-bg-color);
+  background-image: radial-gradient(circle, #e3e3d54f 2px, transparent 2px);
+  background-size: 20px 20px; /* Adjust spacing between dots */
+}
+
+.opening-animation {
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo */
+
+.logo-container {
+  left: 28px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  z-index: 4;
+}
+
+.logo path {
+  fill: var(--night-blue);
+  transition: fill 0.3s ease-in-out;
+}
+
+.logo path:hover {
+  fill: var(--hard-pink);
+}
+
+.hidden {
+  display: none;
+}
+
+.avatar-line {
+  width: 2px;
+  height: 100px;
+  background: var(--hard-pink);
+  margin: 0px 20px;
+}
+
+.avatar-bio-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.avatar-bio-container p {
+  text-transform: uppercase;
+  color: var(--hard-pink);
+  margin: 10px 0px;
+}
+
+.avatar-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.avatar-bio-container.avatar-left {
+  transform: translateX(-50%);
+}
+
+.avatar-bio-container.avatar-right {
+  transform: translateX(50%);
+}
+
+/* Animation */
+
+@keyframes logoAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20vh);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-25%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(25%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
