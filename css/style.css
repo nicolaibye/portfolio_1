@@ -17,6 +17,16 @@
 
 /* Global */
 
+.abel-regular {
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  margin: 0;
+}
+
 html,
 body {
   margin: 0;
@@ -51,10 +61,28 @@ main {
   align-items: center;
 }
 
+/* UI */
+
+.ui-bottom,
+.ui-top {
+  position: absolute;
+  z-index: 10;
+}
+
+.ui-top {
+  top: 20px;
+  right: 20px;
+}
+
+.ui-bottom {
+  bottom: 20px;
+  left: 20px;
+}
+
 /* Logo */
 
 .logo-container {
-  left: 28px;
+  /* left: 28px; */
   position: relative;
   display: flex;
   justify-content: center;
@@ -72,10 +100,6 @@ main {
 
 .logo path:hover {
   fill: var(--hard-pink);
-}
-
-.hidden {
-  display: none;
 }
 
 .avatar-line {
@@ -114,6 +138,90 @@ main {
   transform: translateX(50%);
 }
 
+/* Video */
+
+.bio-video {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.cv-video,
+.contact-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Contact */
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 10;
+  cursor: pointer;
+  color: var(--hard-pink);
+}
+
+.contact-container a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--hard-pink);
+}
+
+.contact-container a:hover {
+  text-decoration: underline;
+  color: var(--night-blue);
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-icon path {
+  fill: var(--hard-pink);
+}
+
+/* Portfolio */
+
+.portfolio {
+  position: absolute;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, auto));
+  overflow: hidden;
+  right: calc(50% - 438px);
+  bottom: calc(50% - 340px);
+}
+
+.portfolio-container {
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.portfolio-container::before {
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Override */
+
+.hidden {
+  display: none;
+  pointer-events: none;
+}
+
 /* Animation */
 
 @keyframes logoAnimation {
@@ -121,7 +229,7 @@ main {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-20vh);
+    transform: translateY(calc(-100% - 0px));
   }
 }
 
@@ -150,5 +258,17 @@ main {
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .portfolio {
+    grid-template-columns: 1fr;
+    right: calc(50% - 146px);
+    bottom: calc(50% - 1254px);
+  }
+
+  .cv-video {
+    display: none;
   }
 }

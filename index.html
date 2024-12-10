@@ -32,9 +32,74 @@
       src="https://kit.fontawesome.com/dd4a452c26.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="14"
+        height="14"
+        viewBox="0 0 14 14"
+        fill="none"
+        class="ui-top"
+      >
+        <circle cx="7" cy="7" r="7" fill="#EE2F58" />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="44"
+        height="44"
+        viewBox="0 0 44 44"
+        fill="none"
+        class="ui-bottom"
+      >
+        <path
+          d="M2 7.07104V36.9999C2 39.7614 4.23858 41.9999 7 41.9999H36.9289C41.3834 41.9999 43.6143 36.6142 40.4645 33.4644L10.5355 3.53552C7.38571 0.3857 2 2.61652 2 7.07104Z"
+          fill="#EE2F58"
+          stroke="#EE2F58"
+          stroke-width="3"
+        />
+      </svg>
+      <video
+        class="bio-video"
+        src="assets/vid/BioAnimation_VP9_high.webm"
+        autoplay
+        muted
+        playsinline
+      ></video>
+      <video
+        class="cv-video"
+        src="assets/vid/CurriculumAnimation_VP9_high.webm"
+        autoplay
+        muted
+        playsinline
+      ></video>
+      <div id="contact-container" class="contact-container hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="15"
+          height="29"
+          viewBox="0 0 15 29"
+          fill="none"
+          class="contact-icon"
+          id="contact-icon"
+        >
+          <path d="M14.8516 0L0.709443 14.1421L14.8516 28.2843L14.8516 0Z" />
+        </svg>
+        <div id="contact-link" class="abel-regular hidden">
+          <p>
+            <a href="">LinkedIn</a> | <a href="">Github</a> |
+            <a href="">Instagram</a> <br />
+            <a href="mailto:nicolai@nicodesign.no">nicolai@nicodesign.no</a>
+          </p>
+        </div>
+      </div>
       <section id="opening-animation" class="opening-animation">
         <video id="intro-video" autoplay muted playsinline>
           <source
@@ -46,7 +111,7 @@
         <div class="logo-container hidden" id="logo-container">
           <div id="left-avatar" class="avatar-bio-container avatar-left hidden">
             <div class="avatar-name">
-              <p>Nicolai Andreassen Bye</p>
+              <p class="abel-regular">Nicolai Andreassen Bye</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="327"
@@ -170,7 +235,7 @@
                 <path d="M0 0H19.6762V43H0V0Z" fill="#EE2F58" />
                 <path d="M307.324 0H327V43H307.324V0Z" fill="#EE2F58" />
               </svg>
-              <p>My time: 00:00:00</p>
+              <p class="abel-regular">My time: 00:00:00</p>
             </div>
             <div class="avatar-line"></div>
           </div>
@@ -192,15 +257,158 @@
             class="avatar-bio-container avatar-right hidden"
           >
             <div class="avatar-line"></div>
-            <p>
+            <p class="abel-regular">
               Access to user bio<br />
               Born: June, 1998<br />
               professions: Graphic Design | Front-end dev<br />
-              Nationality: Norwegian<br />
-              Languages: Norwegian, English<br />
-              Interests: Photography
+              Favorite food: Sweet&Sour Chicken<br />
+              Hobbies: MTG and Games<br />
+              Status: open for work
             </p>
           </div>
+        </div>
+      </section>
+      <section id="portfolio" class="portfolio">
+        <div class="portfolio-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="292"
+            height="418"
+            viewBox="0 0 292 418"
+            fill="none"
+          >
+            <g filter="url(#filter0_b_5_9058)">
+              <path
+                d="M0 385.62L20.6465 406.225H106.182L120.929 418H233.01L277.253 373.845V100.085L292 85.3662V35.3239L272.828 14.7183H113.556L97.3333 0H44.2424L14.7475 29.4366V150.127L0 164.845V385.62Z"
+                fill="#EE2F58"
+                fill-opacity="0.15"
+              />
+              <path
+                d="M106.806 405.444L106.532 405.225H106.182H21.0601L1 385.205V165.26L15.4539 150.835L15.7475 150.542V150.127V29.8514L44.6561 1H96.9473L112.884 15.4589L113.17 15.7183H113.556H272.393L291 35.7172V84.9514L276.546 99.3767L276.253 99.6697V100.085V373.43L232.596 417H121.28L106.806 405.444Z"
+                stroke="#EE2F58"
+                stroke-width="2"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_b_5_9058"
+                x="-4"
+                y="-4"
+                width="300"
+                height="426"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                <feComposite
+                  in2="SourceAlpha"
+                  operator="in"
+                  result="effect1_backgroundBlur_5_9058"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_backgroundBlur_5_9058"
+                  result="shape"
+                />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+        <div class="portfolio-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="292"
+            height="418"
+            viewBox="0 0 292 418"
+            fill="none"
+          >
+            <g filter="url(#filter0_b_5_9058)">
+              <path
+                d="M0 385.62L20.6465 406.225H106.182L120.929 418H233.01L277.253 373.845V100.085L292 85.3662V35.3239L272.828 14.7183H113.556L97.3333 0H44.2424L14.7475 29.4366V150.127L0 164.845V385.62Z"
+                fill="#EE2F58"
+                fill-opacity="0.15"
+              />
+              <path
+                d="M106.806 405.444L106.532 405.225H106.182H21.0601L1 385.205V165.26L15.4539 150.835L15.7475 150.542V150.127V29.8514L44.6561 1H96.9473L112.884 15.4589L113.17 15.7183H113.556H272.393L291 35.7172V84.9514L276.546 99.3767L276.253 99.6697V100.085V373.43L232.596 417H121.28L106.806 405.444Z"
+                stroke="#EE2F58"
+                stroke-width="2"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_b_5_9058"
+                x="-4"
+                y="-4"
+                width="300"
+                height="426"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                <feComposite
+                  in2="SourceAlpha"
+                  operator="in"
+                  result="effect1_backgroundBlur_5_9058"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_backgroundBlur_5_9058"
+                  result="shape"
+                />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+        <div class="portfolio-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="292"
+            height="418"
+            viewBox="0 0 292 418"
+            fill="none"
+          >
+            <g filter="url(#filter0_b_5_9058)">
+              <path
+                d="M0 385.62L20.6465 406.225H106.182L120.929 418H233.01L277.253 373.845V100.085L292 85.3662V35.3239L272.828 14.7183H113.556L97.3333 0H44.2424L14.7475 29.4366V150.127L0 164.845V385.62Z"
+                fill="#EE2F58"
+                fill-opacity="0.15"
+              />
+              <path
+                d="M106.806 405.444L106.532 405.225H106.182H21.0601L1 385.205V165.26L15.4539 150.835L15.7475 150.542V150.127V29.8514L44.6561 1H96.9473L112.884 15.4589L113.17 15.7183H113.556H272.393L291 35.7172V84.9514L276.546 99.3767L276.253 99.6697V100.085V373.43L232.596 417H121.28L106.806 405.444Z"
+                stroke="#EE2F58"
+                stroke-width="2"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_b_5_9058"
+                x="-4"
+                y="-4"
+                width="300"
+                height="426"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                <feComposite
+                  in2="SourceAlpha"
+                  operator="in"
+                  result="effect1_backgroundBlur_5_9058"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_backgroundBlur_5_9058"
+                  result="shape"
+                />
+              </filter>
+            </defs>
+          </svg>
         </div>
       </section>
     </main>

@@ -4,9 +4,9 @@ export function hoverBioInfoHandler(logoId, leftAvatarId, rightAvatarId) {
   const rightAvatar = document.getElementById(rightAvatarId);
 
   const resetAnimation = (element) => {
-    element.style.animation = "none"; // Reset the animation
-    element.offsetHeight; // Trigger a reflow to restart the animation
-    element.style.animation = ""; // Clear the inline animation style
+    element.style.animation = "none";
+    element.offsetHeight;
+    element.style.animation = "";
   };
 
   logo.addEventListener("mouseover", () => {
