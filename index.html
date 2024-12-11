@@ -80,7 +80,7 @@
         muted
         playsinline
       ></video>
-      <div id="contact-container" class="contact-container hidden">
+      <div id="contact-container" class="contact-container hidden" tabindex="0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="15"
@@ -92,10 +92,17 @@
         >
           <path d="M14.8516 0L0.709443 14.1421L14.8516 28.2843L14.8516 0Z" />
         </svg>
-        <div id="contact-link" class="abel-regular hidden">
+        <div id="contact-link" class="contact-content abel-regular hidden">
           <p>
-            <a href="">LinkedIn</a> | <a href="">Github</a> |
-            <a href="">Instagram</a> <br />
+            <a href="https://www.linkedin.com/in/nicolai-bye/" target="_blank"
+              >LinkedIn</a
+            >
+            |
+            <a href="https://github.com/nicolaibye" target="_blank">Github</a> |
+            <a href="https://www.instagram.com/nicolai_designs/" target="_blank"
+              >Instagram</a
+            >
+            <br />
             <a href="mailto:nicolai@nicodesign.no">nicolai@nicodesign.no</a>
           </p>
         </div>
@@ -268,148 +275,312 @@
           </div>
         </div>
       </section>
-      <section id="portfolio" class="portfolio">
-        <div class="portfolio-container">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="292"
-            height="418"
-            viewBox="0 0 292 418"
-            fill="none"
-          >
-            <g filter="url(#filter0_b_5_9058)">
-              <path
-                d="M0 385.62L20.6465 406.225H106.182L120.929 418H233.01L277.253 373.845V100.085L292 85.3662V35.3239L272.828 14.7183H113.556L97.3333 0H44.2424L14.7475 29.4366V150.127L0 164.845V385.62Z"
-                fill="#EE2F58"
-                fill-opacity="0.15"
-              />
-              <path
-                d="M106.806 405.444L106.532 405.225H106.182H21.0601L1 385.205V165.26L15.4539 150.835L15.7475 150.542V150.127V29.8514L44.6561 1H96.9473L112.884 15.4589L113.17 15.7183H113.556H272.393L291 35.7172V84.9514L276.546 99.3767L276.253 99.6697V100.085V373.43L232.596 417H121.28L106.806 405.444Z"
-                stroke="#EE2F58"
-                stroke-width="2"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_b_5_9058"
-                x="-4"
-                y="-4"
-                width="300"
-                height="426"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+      <section>
+        <ul id="portfolio" class="portfolio">
+          <li class="bio-info-mobile" id="bio-info-mobile">
+            <p class="abel-regular">
+              Access to user bio<br />
+              Born: June, 1998<br />
+              professions: Graphic Design | Front-end dev<br />
+              Favorite food: Sweet&Sour Chicken<br />
+              Hobbies: MTG and Games<br />
+              Status: open for work
+            </p>
+          </li>
+          <li class="portfolio-container">
+            <div class="portfolio-content">
+              <h1>Cross Course Project</h1>
+              <p class="portfolio-description abel-regular">
+                Welcome to SquareEyes, your destination for all movies. Discover
+                cinema, from timeless classics to modern hits, streamed to your
+                screen anytime, anywhere.
+              </p>
+              <div class="portfolio-links">
+                <p>
+                  <a
+                    href="https://github.com/nicolaibye/html-css-course-squareeyes"
+                    target="_blank"
+                    >Github</a
+                  >
+                  |
+                  <a
+                    href="https://nicolaibye.github.io/html-css-course-squareeyes/"
+                    target="_blank"
+                    >Live</a
+                  >
+                </p>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="239"
+                height="102"
+                viewBox="0 0 239 102"
+                fill="none"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
-                <feComposite
-                  in2="SourceAlpha"
-                  operator="in"
-                  result="effect1_backgroundBlur_5_9058"
+                <defs>
+                  <pattern
+                    id="img1"
+                    patternUnits="userSpaceOnUse"
+                    width="269"
+                    height="152"
+                  >
+                    <image
+                      href="assets/img/SquareEyes-github-readme.jpg"
+                      x="0"
+                      y="0"
+                      width="269"
+                      height="152"
+                    />
+                  </pattern>
+                </defs>
+                <path
+                  d="M3.40949e-06 78L0 0L238.5 6.52516e-08L238.5 65L201.5 102L107.5 102L94.5 89L11 89L3.40949e-06 78Z"
+                  fill="url(#img1)"
                 />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_backgroundBlur_5_9058"
-                  result="shape"
+              </svg>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="292"
+              height="418"
+              viewBox="0 0 292 418"
+              fill="none"
+              class="portfolio-bg"
+            >
+              <g filter="url(#filter0_b_5_9058)">
+                <path
+                  d="M0 385.62L20.6465 406.225H106.182L120.929 418H233.01L277.253 373.845V100.085L292 85.3662V35.3239L272.828 14.7183H113.556L97.3333 0H44.2424L14.7475 29.4366V150.127L0 164.845V385.62Z"
+                  fill="#EE2F58"
+                  fill-opacity="0.15"
                 />
-              </filter>
-            </defs>
-          </svg>
-        </div>
-        <div class="portfolio-container">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="292"
-            height="418"
-            viewBox="0 0 292 418"
-            fill="none"
-          >
-            <g filter="url(#filter0_b_5_9058)">
-              <path
-                d="M0 385.62L20.6465 406.225H106.182L120.929 418H233.01L277.253 373.845V100.085L292 85.3662V35.3239L272.828 14.7183H113.556L97.3333 0H44.2424L14.7475 29.4366V150.127L0 164.845V385.62Z"
-                fill="#EE2F58"
-                fill-opacity="0.15"
-              />
-              <path
-                d="M106.806 405.444L106.532 405.225H106.182H21.0601L1 385.205V165.26L15.4539 150.835L15.7475 150.542V150.127V29.8514L44.6561 1H96.9473L112.884 15.4589L113.17 15.7183H113.556H272.393L291 35.7172V84.9514L276.546 99.3767L276.253 99.6697V100.085V373.43L232.596 417H121.28L106.806 405.444Z"
-                stroke="#EE2F58"
-                stroke-width="2"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_b_5_9058"
-                x="-4"
-                y="-4"
-                width="300"
-                height="426"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                <path
+                  d="M106.806 405.444L106.532 405.225H106.182H21.0601L1 385.205V165.26L15.4539 150.835L15.7475 150.542V150.127V29.8514L44.6561 1H96.9473L112.884 15.4589L113.17 15.7183H113.556H272.393L291 35.7172V84.9514L276.546 99.3767L276.253 99.6697V100.085V373.43L232.596 417H121.28L106.806 405.444Z"
+                  stroke="#EE2F58"
+                  stroke-width="2"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_b_5_9058"
+                  x="-4"
+                  y="-4"
+                  width="300"
+                  height="426"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="in"
+                    result="effect1_backgroundBlur_5_9058"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_backgroundBlur_5_9058"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
+          </li>
+          <li class="portfolio-container">
+            <div class="portfolio-content">
+              <h1>Semester Project 1</h1>
+              <p class="portfolio-description abel-regular">
+                Explore the wonders of science at KSM, Kristiansand’s hub for
+                discovery. Dive into hands-on experiments, and endless learning,
+                inspiring minds of all ages every day.
+              </p>
+              <div class="portfolio-links">
+                <p>
+                  <a
+                    href="https://github.com/nicolaibye/semester_project_1_NicolaiBye"
+                    target="_blank"
+                    >Github</a
+                  >
+                  |
+                  <a
+                    href="https://nicolaibye.github.io/semester_project_1_NicolaiBye/"
+                    target="_blank"
+                    >Live</a
+                  >
+                </p>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="239"
+                height="102"
+                viewBox="0 0 239 102"
+                fill="none"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
-                <feComposite
-                  in2="SourceAlpha"
-                  operator="in"
-                  result="effect1_backgroundBlur_5_9058"
+                <defs>
+                  <pattern
+                    id="img2"
+                    patternUnits="userSpaceOnUse"
+                    width="269"
+                    height="182"
+                  >
+                    <image
+                      href="assets/img/KSM-github-readme.jpg"
+                      x="0"
+                      y="0"
+                      width="269"
+                      height="182"
+                    />
+                  </pattern>
+                </defs>
+                <path
+                  d="M3.40949e-06 78L0 0L238.5 6.52516e-08L238.5 65L201.5 102L107.5 102L94.5 89L11 89L3.40949e-06 78Z"
+                  fill="url(#img2)"
                 />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_backgroundBlur_5_9058"
-                  result="shape"
+              </svg>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="292"
+              height="418"
+              viewBox="0 0 292 418"
+              fill="none"
+            >
+              <g filter="url(#filter0_b_5_9058)">
+                <path
+                  d="M0 385.62L20.6465 406.225H106.182L120.929 418H233.01L277.253 373.845V100.085L292 85.3662V35.3239L272.828 14.7183H113.556L97.3333 0H44.2424L14.7475 29.4366V150.127L0 164.845V385.62Z"
+                  fill="#EE2F58"
+                  fill-opacity="0.15"
                 />
-              </filter>
-            </defs>
-          </svg>
-        </div>
-        <div class="portfolio-container">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="292"
-            height="418"
-            viewBox="0 0 292 418"
-            fill="none"
-          >
-            <g filter="url(#filter0_b_5_9058)">
-              <path
-                d="M0 385.62L20.6465 406.225H106.182L120.929 418H233.01L277.253 373.845V100.085L292 85.3662V35.3239L272.828 14.7183H113.556L97.3333 0H44.2424L14.7475 29.4366V150.127L0 164.845V385.62Z"
-                fill="#EE2F58"
-                fill-opacity="0.15"
-              />
-              <path
-                d="M106.806 405.444L106.532 405.225H106.182H21.0601L1 385.205V165.26L15.4539 150.835L15.7475 150.542V150.127V29.8514L44.6561 1H96.9473L112.884 15.4589L113.17 15.7183H113.556H272.393L291 35.7172V84.9514L276.546 99.3767L276.253 99.6697V100.085V373.43L232.596 417H121.28L106.806 405.444Z"
-                stroke="#EE2F58"
-                stroke-width="2"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_b_5_9058"
-                x="-4"
-                y="-4"
-                width="300"
-                height="426"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                <path
+                  d="M106.806 405.444L106.532 405.225H106.182H21.0601L1 385.205V165.26L15.4539 150.835L15.7475 150.542V150.127V29.8514L44.6561 1H96.9473L112.884 15.4589L113.17 15.7183H113.556H272.393L291 35.7172V84.9514L276.546 99.3767L276.253 99.6697V100.085V373.43L232.596 417H121.28L106.806 405.444Z"
+                  stroke="#EE2F58"
+                  stroke-width="2"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_b_5_9058"
+                  x="-4"
+                  y="-4"
+                  width="300"
+                  height="426"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="in"
+                    result="effect1_backgroundBlur_5_9058"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_backgroundBlur_5_9058"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
+          </li>
+          <li class="portfolio-container">
+            <div class="portfolio-content">
+              <h1>Project Exam 1</h1>
+              <p class="portfolio-description abel-regular">
+                Stay ahead with HotViews Labs, your go-to source for innovation.
+                Explore the latest in entrepreneurship and expert insights
+                driving the future forward.
+              </p>
+              <div class="portfolio-links">
+                <p>
+                  <a
+                    href="https://github.com/nicolaibye/FED1-project-exam-1-Nicolai-B"
+                    target="_blank"
+                    >Github</a
+                  >
+                  |
+                  <a href="https://hotviewslabs.netlify.app/" target="_blank"
+                    >Live</a
+                  >
+                </p>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="239"
+                height="102"
+                viewBox="0 0 239 102"
+                fill="none"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
-                <feComposite
-                  in2="SourceAlpha"
-                  operator="in"
-                  result="effect1_backgroundBlur_5_9058"
+                <defs>
+                  <pattern
+                    id="img3"
+                    patternUnits="userSpaceOnUse"
+                    width="239"
+                    height="152"
+                  >
+                    <image
+                      href="assets/img/ProjectExam-github-readme.jpg"
+                      x="0"
+                      y="0"
+                      width="239"
+                      height="140"
+                    />
+                  </pattern>
+                </defs>
+                <path
+                  d="M3.40949e-06 78L0 0L238.5 6.52516e-08L238.5 65L201.5 102L107.5 102L94.5 89L11 89L3.40949e-06 78Z"
+                  fill="url(#img3)"
                 />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_backgroundBlur_5_9058"
-                  result="shape"
+              </svg>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="292"
+              height="418"
+              viewBox="0 0 292 418"
+              fill="none"
+            >
+              <g filter="url(#filter0_b_5_9058)">
+                <path
+                  d="M0 385.62L20.6465 406.225H106.182L120.929 418H233.01L277.253 373.845V100.085L292 85.3662V35.3239L272.828 14.7183H113.556L97.3333 0H44.2424L14.7475 29.4366V150.127L0 164.845V385.62Z"
+                  fill="#EE2F58"
+                  fill-opacity="0.15"
                 />
-              </filter>
-            </defs>
-          </svg>
-        </div>
+                <path
+                  d="M106.806 405.444L106.532 405.225H106.182H21.0601L1 385.205V165.26L15.4539 150.835L15.7475 150.542V150.127V29.8514L44.6561 1H96.9473L112.884 15.4589L113.17 15.7183H113.556H272.393L291 35.7172V84.9514L276.546 99.3767L276.253 99.6697V100.085V373.43L232.596 417H121.28L106.806 405.444Z"
+                  stroke="#EE2F58"
+                  stroke-width="2"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_b_5_9058"
+                  x="-4"
+                  y="-4"
+                  width="300"
+                  height="426"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                  <feComposite
+                    in2="SourceAlpha"
+                    operator="in"
+                    result="effect1_backgroundBlur_5_9058"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_backgroundBlur_5_9058"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
+          </li>
+        </ul>
       </section>
     </main>
   </body>

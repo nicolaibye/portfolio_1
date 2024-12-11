@@ -23,6 +23,36 @@
   font-style: normal;
 }
 
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--hard-pink);
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: url("../assets/img/cursor_default.png"), pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--night-blue);
+}
+
+h1 {
+  margin: 0;
+  font-family: "Abel", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 90.611%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 p {
   margin: 0;
 }
@@ -39,6 +69,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  cursor: url("../assets/img/cursor_pointer.png"), auto;
 }
 
 main {
@@ -65,7 +96,7 @@ main {
 
 .ui-bottom,
 .ui-top {
-  position: absolute;
+  position: fixed;
   z-index: 10;
 }
 
@@ -148,7 +179,7 @@ main {
 
 .cv-video,
 .contact-container {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   right: 20px;
 }
@@ -160,18 +191,18 @@ main {
   align-items: center;
   gap: 10px;
   z-index: 10;
-  cursor: pointer;
-  color: var(--hard-pink);
+  cursor: url("../assets/img/cursor_default.png"), pointer;
 }
 
-.contact-container a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--hard-pink);
+.contact-content {
+  background-color: rgba(44, 95, 99, 0.5);
+  border: rgba(44, 95, 99, 0.7) 2px solid;
+  color: var(--night-blue);
+  border-radius: 4px;
+  padding: 4px;
 }
 
-.contact-container a:hover {
-  text-decoration: underline;
+.contact-content a {
   color: var(--night-blue);
 }
 
@@ -179,6 +210,10 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.contact-icon {
+  z-index: 3;
 }
 
 .contact-icon path {
@@ -201,6 +236,7 @@ main {
   position: relative;
   overflow: hidden;
   z-index: 5;
+  padding-bottom: 20px;
 }
 
 .portfolio-container::before {
@@ -213,6 +249,31 @@ main {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+.portfolio-content {
+  position: absolute;
+  margin: 40px 0px 0px 40px;
+  max-width: 216px;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.portfolio-content h1 {
+  margin: 0px 0px 8px 0px;
+}
+
+.portfolio-content svg {
+  margin: 24px 0px 0px -20px;
+}
+
+.portfolio-description {
+  margin: 4px 0px;
+}
+
+.portfolio-links {
+  font-size: 20px;
 }
 
 /* Override */
@@ -270,5 +331,34 @@ main {
 
   .cv-video {
     display: none;
+  }
+
+  .bio-video {
+    width: 280px;
+    height: auto;
+  }
+
+  .contact-container {
+    bottom: 14px;
+    right: 14px;
+  }
+
+  .ui-bottom {
+    bottom: 14px;
+    left: 14px;
+  }
+
+  .ui-top {
+    top: 14px;
+    right: 14px;
+  }
+
+  @keyframes logoAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(calc(-100% + 20px));
+    }
   }
 }
