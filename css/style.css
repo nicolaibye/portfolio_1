@@ -357,7 +357,7 @@ main {
   }
 
   .bio-video {
-    width: 280px;
+    width: 260px;
     height: auto;
   }
 
@@ -392,12 +392,18 @@ main {
 }
 
 @media screen and (max-width: 600px) {
+
+  .logo {
+    width: 75%;
+    height: auto;
+  }
+
   @keyframes logoAnimation {
     0% {
       transform: translateY(0);
     }
     100% {
-      transform: translateY(calc(-100% + 110px));
+      transform: translateY(calc(-100% + 60px));
     }
   }
   @keyframes slideInBottom {
