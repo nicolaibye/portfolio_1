@@ -12,7 +12,6 @@ export function enterClick(enterClickable) {
                     view: window
                 });
                 target.dispatchEvent(customClick);
-                console.log("Custom click dispatched");
             }
         }
     });
