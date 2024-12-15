@@ -4,6 +4,6 @@ export function cardAnimationIntro(container) {
     document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
             cardContainer.style.animation = "slideInBottom 1.5s ease-in-out forwards";
-        }, 11300);
+        }, 11500);
     });
 }

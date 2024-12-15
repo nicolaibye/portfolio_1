@@ -10,13 +10,14 @@ import { replaceMainAnimation } from "./handlers/replaceMainAnimation.js";
 introAnimationHandler("intro-video", "logo-container");
 contactClick("contact-container", "contact-icon", "contact-link");
 enterClick("#contact-icon");
-cardAnimationIntro("portfolio");
+cardAnimationIntro("portfolio-wrapper");
 myTimeBio("timer");
 replaceMainAnimation("intro-video", "intro-video-source");
 
 window.addEventListener("DOMContentLoaded", () => {
   if (window.innerWidth < 896) {
-    clickBioInfoHandler("logo", "bio-info-mobile");
+    clickBioInfoHandler("logo", "bio-info-mobile", "portfolio");
+    myTimeBio("timer-small");
   }
 });
 

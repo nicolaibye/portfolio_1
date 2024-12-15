@@ -113,15 +113,12 @@ main {
 /* Logo */
 
 .logo-container {
-  /* left: 28px; */
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.logo {
-  z-index: 4;
+  pointer-events: auto;
+  z-index: 10;
 }
 
 .logo path {
@@ -229,15 +226,19 @@ main {
 
 /* Portfolio */
 
-.portfolio {
+.portfolio-wrapper {
   position: absolute;
+  right: calc(50% - 438px);
+  bottom: calc(50% - 340px);
+  z-index: 5;
+  opacity: 0;
+}
+
+.portfolio {
   max-width: 900px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, auto));
   overflow: hidden;
-  right: calc(50% - 438px);
-  bottom: calc(50% - 340px);
-  opacity: 0;
 }
 
 .portfolio-container {
@@ -346,10 +347,32 @@ main {
 }
 
 @media screen and (max-width: 896px) {
-  .portfolio {
-    grid-template-columns: 1fr;
+  .portfolio-wrapper {
     right: calc(50% - 146px);
     bottom: calc(50% - 1254px);
+    pointer-events: none;
+  }
+
+  .portfolio {
+    grid-template-columns: 1fr;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .portfolio.moved {
+    transform: translateY(255px);
+  }
+
+  .bio-info-mobile {
+    text-transform: uppercase;
+    color: var(--hard-pink);
+    font-size: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .bio-info-mobile.active {
+    opacity: 1;
   }
 
   .cv-video {
@@ -381,6 +404,17 @@ main {
     transition: fill 0.3s ease-in-out;
   }
 
+  .avatar-line {
+    width: 100%;
+    height: 2px;
+    background: var(--hard-pink);
+    margin: 20px 0px;
+  }
+
+  .timer-small {
+    margin: 0px 0px 20px 0px;
+  }
+
   @keyframes logoAnimation {
     0% {
       transform: translateY(0);
@@ -392,7 +426,6 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-
   .logo {
     width: 75%;
     height: auto;
