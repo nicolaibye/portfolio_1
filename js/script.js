@@ -16,7 +16,7 @@ replaceMainAnimation("intro-video", "intro-video-source");
 
 window.addEventListener("DOMContentLoaded", () => {
   if (window.innerWidth < 896) {
-    clickBioInfoHandler("logo", "bio-info-mobile", "portfolio");
+    clickBioInfoHandler("logo", "bio-info-mobile", "portfolio", "portfolio-wrapper");
     myTimeBio("timer-small");
   }
 });

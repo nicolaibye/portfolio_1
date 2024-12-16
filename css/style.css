@@ -350,7 +350,6 @@ main {
   .portfolio-wrapper {
     right: calc(50% - 146px);
     bottom: calc(50% - 1254px);
-    pointer-events: none;
   }
 
   .portfolio {
